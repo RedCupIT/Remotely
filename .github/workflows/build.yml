@@ -44,7 +44,7 @@ jobs:
           dotnet-version: 7
         
       - name: Setup NuGet.exe for use with actions
-        uses: NuGet/setup-nuget@v1.2.0
+        uses: NuGet/setup-nuget@296fd3ccf8528660c91106efefe2364482f86d6f # v1.2.0
 
       - name: Set current version
         shell: pwsh
@@ -108,7 +108,7 @@ jobs:
       
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1
+      uses: microsoft/setup-msbuild@ede762b26a2de8d110bb5a3db4d7e0e080c0e917 # v1
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
